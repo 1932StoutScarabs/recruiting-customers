@@ -1,1 +1,164 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChattyNotes - Product Showcase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .flyer-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .flyer-container embed {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .slides-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .slide-item {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .slide-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        
+        .placeholder {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 10px;
+            color: #856404;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .slides-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ChattyNotes Product Showcase</h1>
+        
+        <div class="section">
+            <h2>Marketing Flyer</h2>
+            <div class="flyer-container">
+                <embed src="Flyer.pdf" type="application/pdf">
+            </div>
+            <div class="caption">
+                This flyer showcases ChattyNotes and could be used for marketing our website. It highlights the key features and benefits of our note-taking platform, designed to help users capture and organize their thoughts more effectively.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>User Guide</h2>
+            <div class="slides-container">
+                <div class="slide-item">
+                    <img src="Slide 1.png" alt="ChattyNotes Slide 1">
+                    <div class="caption">
+                        <strong>Page 1:</strong> This page has the area to upload files to submit to the AI.
+                        <div class="placeholder">
+                            .txt, mp3, mp4, .m4a files can be uploaded. Only 1 file can be uploaded at a time.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <img src="Slide 2.png" alt="ChattyNotes Slide 2">
+                    <div class="caption">
+                        <strong>Page 2:</strong> Page 2 has the AI prompts or personal prompts. This page will send the prompt to the AI.
+                        <div class="placeholder">
+                            You can choose from the following prompts: summarize, give me action items, give me notes. It also has a area to ask your own prompt.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <img src="Slide 3.png" alt="ChattyNotes Slide 3">
+                    <div class="caption">
+                        <strong>Slide 3:</strong> This page will show the AI's response. You can save the response to a file or copy it to the clipboard.
+                        <div class="placeholder">
+                            Saving the response to a file will save it to the files folder. Copying the response to the clipboard will copy it to the clipboard.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
